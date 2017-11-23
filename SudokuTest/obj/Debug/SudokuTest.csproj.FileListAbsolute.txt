@@ -1,0 +1,7 @@
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\SudokuTest\bin\Debug\SudokuTest.dll
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\SudokuTest\bin\Debug\SudokuTest.pdb
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\SudokuTest\bin\Debug\Sudoku.exe
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\SudokuTest\bin\Debug\Sudoku.pdb
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\SudokuTest\obj\Debug\SudokuTest.csprojResolveAssemblyReference.cache
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\SudokuTest\obj\Debug\SudokuTest.dll
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\SudokuTest\obj\Debug\SudokuTest.pdb

@@ -1,1 +1,6 @@
 C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\Sudoku\obj\Debug\Sudoku.csprojResolveAssemblyReference.cache
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+C:\Users\benja\OneDrive\Documentos\GitHub\CS5700\Sudoku\Sudoku\obj\Debug\Sudoku.pdb

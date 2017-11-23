@@ -8,9 +8,18 @@ namespace Sudoku
 {
     public class Guess:SolveSquare
     {
-        public override void SelectSymbol()
+        public override char SelectSymbol()
         {
-            base.SelectSymbol();
+            char sym = new char();
+            Guess guess = new Guess();
+            foreach (var ch in guess.square.validSymbol)
+            {
+                if (guess.needsSymbol && !guess.inBlock && !guess.inColumn && !guess.inRow)
+                {
+                    sym = characater;
+                }
+            }
+            return sym;
         }
     }
 }

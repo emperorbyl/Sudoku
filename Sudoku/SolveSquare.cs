@@ -8,36 +8,59 @@ namespace Sudoku
 {
     public class SolveSquare
     {
-        private Square square { get; set; }
-        public void FindCharacter()
+        protected Square square = new Square('1');
+        protected bool needsSymbol { get; set; }
+        protected bool inRow { get; set; }
+        protected bool inColumn { get; set; }
+        protected bool inBlock { get; set; }
+        protected char characater = '1';
+        public void FindCharacter(Square sq)
         {
-            CheckSquare();
-            ValidateBlock();
-            ValidateRow();
-            ValidateColumn();
-            SelectSymbol();
+            square = sq;
+            needsSymbol = CheckSquare();
+            inBlock = ValidateBlock();
+            inRow = ValidateRow();
+            inColumn = ValidateColumn();
+            characater = SelectSymbol();
             InsertSymbol();
         }
-        public void CheckSquare()
+        public bool CheckSquare()
         {
-
+            
+            if (square.symbol != '-')
+                needsSymbol = false;
+            else
+                needsSymbol = true;
+            return needsSymbol;
         }
-        public void ValidateRow()
+        public bool ValidateRow()
         {
-
+            if (square.row.content.Contains(characater))
+                inRow = true;
+            else
+                inRow = false;
+            return inRow;
         }
-        public void ValidateColumn()
+        public bool ValidateColumn()
         {
-
+            if (square.column.content.Contains(characater))
+                inColumn = true;
+            else
+                inColumn = false;
+            return inColumn;
         }
-        public void ValidateBlock()
+        public bool ValidateBlock()
         {
-
+            if (square.block.content.Contains(characater))
+                inBlock = true;
+            else
+                inBlock = false;
+            return inBlock;
         }
         public void InsertSymbol()
         {
-
+            square.symbol = characater;
         }
-        public virtual void SelectSymbol() { }
+        public virtual char SelectSymbol() { return characater; }
     }
 }
