@@ -11,13 +11,14 @@ namespace Sudoku
         public override char SelectSymbol()
         {
             char sym = new char();
-            Guess guess = new Guess();
-            foreach (var ch in guess.square.validSymbol)
+            foreach (var ch in square.validSymbol)
             {
-                if (guess.needsSymbol && !guess.inBlock && !guess.inColumn && !guess.inRow)
+                if (needsSymbol && !inBlock && !inColumn && !inRow)
                 {
                     sym = characater;
                 }
+                else
+                    sym = square.symbol;
             }
             return sym;
         }

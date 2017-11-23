@@ -17,6 +17,11 @@ namespace Sudoku
         public void FindCharacter(Square sq)
         {
             square = sq;
+            square.symbol = sq.symbol;
+            square.column = sq.column;
+            square.block = sq.block;
+            square.row = sq.row;
+            square.validSymbol = sq.validSymbol;
             needsSymbol = CheckSquare();
             inBlock = ValidateBlock();
             inRow = ValidateRow();
