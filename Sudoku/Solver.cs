@@ -36,15 +36,24 @@ namespace Sudoku
                     if(file[i][j] != ' ')
                         board.grid.Add(new Square(file[i][j]));
             foreach (var sq in board.grid)
+            {
                 foreach (var cha in characters)
-                    if(cha != ' ' && !sq.validSymbol.Contains(cha))
+                    if (cha != ' ' && !sq.validSymbol.Contains(cha))
                         sq.validSymbol.Add(cha);
+                for (int i = 0; i < count; i++)
+                    sq.row.content.Add(board.grid[i].symbol);
+                for (int i = 1; i < count * count; i *= count)
+                    sq.column.content.Add(board.grid[i].symbol);
+                for (int i = 0; i < Math.Sqrt(count); i++)
+                    for (int j = 0; j < Math.Sqrt(count); j++)
+                        sq.block.content.Add(board.grid[i * j].symbol);
+            }
         } 
         public void Solve()
         {
             foreach (var sq in board.grid)
             {
-                if (sq.row.content.Count == 8 || sq.block.content.Count == 8 || sq.column.content.Count == 8)
+                if (sq.row.content.Count == board.size-1 || sq.block.content.Count == board.size-1 || sq.column.content.Count == board.size-1)
                     one.FindCharacter(sq);
                 else
                     guess.FindCharacter(sq);

@@ -15,7 +15,7 @@ namespace Sudoku
             {
                 if (needsSymbol && !inBlock && !inColumn && !inRow)
                 {
-                    sym = characater;
+                    sym = ch;
                 }
                 else
                     sym = square.symbol;
